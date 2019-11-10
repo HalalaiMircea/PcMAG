@@ -1,0 +1,35 @@
+
+div#empty-cart {
+    margin: 10vh 15vw;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 3rem;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+#return-bttn-cont {
+    background-color: lightblue;
+    color: white;
+    margin: 5vh 20vw;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#return-bttn-cont:hover {
+    opacity: 0.8;
+}

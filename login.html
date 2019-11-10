@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PcMAG-Login</title>
+
+    <link rel="stylesheet" type="text/css" href="css/general-style.css">
+    <link rel="stylesheet" type="text/css" href="css/login-style.css">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+</head>
+<body>
+<!--//NAVIGATION BAR-->
+
+<header>
+    <nav id="nav-bar">
+        <a href="index.html"><img class="small-logo" src="img/logo.png" alt="logo"></a>
+        <ul>
+            <li><a href="#">Products</a>
+                <ul>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Prebuilt Systems</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Peripherals</a></li>
+                    <li><a href="#">Networking</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search products...">
+            <div id="searchbtn"><img class="fas" src="svg/search-solid.svg" alt="srchbttn" width="24" height="24"></div>
+        </div>
+        <a class="nav-icon-link" href="login.html">
+            <img class="nav-icon" src="svg/user-circle-solid.svg" alt="account">
+            <div class="nav-icon-text">Account</div>
+        </a>
+        <a class="nav-icon-link" href="cart.html">
+            <img class="nav-icon" src="svg/shopping-cart-solid.svg" alt="cart">
+            <div class="nav-icon-text">Cart</div>
+        </a>
+    </nav>
+</header>
+
+<!--NAVIGATION BAR//-->
+
+<div class="main-body">
+    <div class="logo-container">
+        <img class="big-logo" src="img/logo.png" alt="">
+    </div>
+
+    <div class="container">
+        <label><b>Username</b><input class="uname-input" type="text" placeholder="Enter Username" name="uname"
+                                     required></label>
+
+        <label><b>Password</b><input class="psw-input" type="password" placeholder="Enter Password" name="psw"
+                                     required></label>
+
+        <button type="submit">Login</button>
+        <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+    </div>
+
+    <div class="container">
+        <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PcMAG-Shopping Cart</title>
+
+    <link rel="stylesheet" type="text/css" href="css/general-style.css">
+    <link rel="stylesheet" type="text/css" href="css/cart-style.css">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+<!--//NAVIGATION BAR-->
+
+<header>
+    <nav id="nav-bar">
+        <a href="index.html"><img class="small-logo" src="img/logo.png" alt="logo"></a>
+        <ul>
+            <li><a href="#">Products</a>
+                <ul>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Prebuilt Systems</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Peripherals</a></li>
+                    <li><a href="#">Networking</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search products...">
+            <div id="searchbtn"><img class="fas" src="svg/search-solid.svg" alt="srchbttn" width="24" height="24"></div>
+        </div>
+        <a class="nav-icon-link" href="login.html">
+            <img class="nav-icon" src="svg/user-circle-solid.svg" alt="account">
+            <div class="nav-icon-text">Account</div>
+        </a>
+        <a class="nav-icon-link" href="cart.html">
+            <img class="nav-icon" src="svg/shopping-cart-solid.svg" alt="cart">
+            <div class="nav-icon-text">Cart</div>
+        </a>
+    </nav>
+</header>
+
+<!--NAVIGATION BAR//-->
+<div id="empty-cart">
+    <h1>Your cart is empty</h1>
+    <h4>Please return to the store to add products</h4>
+    <a href="index.html">
+        <div id="return-bttn-cont">Return to Store</div>
+    </a>
+
+</div>
+
+</body>
+</html>

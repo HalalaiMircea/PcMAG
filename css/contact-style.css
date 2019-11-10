@@ -1,0 +1,25 @@
+
+div.body-page {
+    margin: 10vh 15vw;
+    padding: 10px 15px;
+    background-color: white;
+    border: 3px solid grey;
+    border-radius: 15px;
+}
+
+table.info {
+    margin: 0 0 10px 20px;
+}
+
+iframe#gmaps-frame {
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    border: none;
+}
+
+@media screen and (max-width: 764px) {
+    div.body-page {
+        margin: 10vh 1vw;
+    }
+}
