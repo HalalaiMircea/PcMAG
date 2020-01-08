@@ -9,21 +9,17 @@
     6<input class="input-field" id="range-input" type="range">
     7<select>
 </div>*/
-function changeLabelOnRangeEvent() {
-    let slider = document.getElementById('range-input');
-    let label = document.getElementById('range_val');
-    label.textContent = slider.value;
-}
 
 function createInputs() {
     let inputs = [];
 
     //We create input elements and push them into an array
     for (let i = 0; i < 10; i++) {
-        let input_elem = document.createElement("input");
+        let input_elem;
 
         switch (i) {
             case 0:
+                input_elem = document.createElement("input");
                 input_elem.className = "input-field";
                 input_elem.id = "disp-input";
                 input_elem.type = "text";
@@ -31,20 +27,26 @@ function createInputs() {
                 input_elem.required = true;
                 break;
             case 1:
+                input_elem = document.createElement("input");
                 input_elem.className = "input-field";
                 input_elem.id = "email-input";
                 input_elem.type = "email";
-                input_elem.placeholder = "Enter email";
+                input_elem.placeholder = "Enter Email";
                 input_elem.required = true;
                 break;
             case 2:
+                input_elem = document.createElement("input");
                 input_elem.className = "input-field";
                 input_elem.id = "pass-input";
                 input_elem.type = "password";
-                input_elem.placeholder = "Enter password";
+                input_elem.placeholder = "Enter Password";
                 input_elem.required = true;
+                input_elem.pattern = "(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*(),.?\":{}|<>]).{8,}";
+                input_elem.title = "Password must contain at least 8 characters, including UPPER/lowercase, numbers and " +
+                    "special characters !@#$%^&*(),.?\":{}|<>";
                 break;
             case 3:
+                input_elem = document.createElement("input");
                 input_elem.className = "input-field";
                 input_elem.id = "radio-input-male";
                 input_elem.type = "radio";
@@ -57,6 +59,7 @@ function createInputs() {
                 input_elem.textContent = "Male";
                 break;
             case 5:
+                input_elem = document.createElement("input");
                 input_elem.className = "input-field";
                 input_elem.id = "radio-input-female";
                 input_elem.type = "radio";
@@ -73,6 +76,7 @@ function createInputs() {
                 input_elem.textContent = "Select year and month of birth";
                 break;
             case 8:
+                input_elem = document.createElement("input");
                 input_elem.className = "input-field";
                 input_elem.id = "range-input";
                 input_elem.type = "range";
@@ -96,6 +100,7 @@ function createInputs() {
 
     let sel_elem = document.createElement("select");
     sel_elem.id = "sel_month";
+    sel_elem.className = "input-field";
     let months = ['January', 'February', 'March', 'April', 'May',
         'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     for (let i = 0; i < months.length; i++) {

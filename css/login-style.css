@@ -6,7 +6,12 @@
     background-color: white;
 }
 
-.uname-input, .psw-input {
+.logo-container {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+#disp-input, #email-input, #pass-input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -14,20 +19,11 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-}
-
-.logo-container {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-
-input[type=text], input[type=password] {
-
+    font-size: 16px;
 }
 
 .input-field {
     margin: 15px;
-    width: 50%;
 }
 
 .container {
