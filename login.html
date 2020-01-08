@@ -7,11 +7,11 @@
 
     <link rel="stylesheet" type="text/css" href="css/general-style.css">
     <link rel="stylesheet" type="text/css" href="css/login-style.css">
+    <script src="js/login-script.js"></script>
 
     <link rel="shortcut icon" href="img/favicon.ico">
-
 </head>
-<body>
+<body onload="createInputs()">
 <!--//NAVIGATION BAR-->
 
 <header>
@@ -47,24 +47,35 @@
 <!--NAVIGATION BAR//-->
 
 <div class="main-body">
-    <div class="logo-container">
+    <!--<div class="logo-container">
         <img class="big-logo" src="img/logo.png" alt="">
     </div>
-
     <div class="container">
         <label><b>Username</b><input class="uname-input" type="text" placeholder="Enter Username" name="uname"
                                      required></label>
-
         <label><b>Password</b><input class="psw-input" type="password" placeholder="Enter Password" name="psw"
                                      required></label>
-
         <button type="submit">Login</button>
         <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
     </div>
-
     <div class="container">
         <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
+    </div>-->
+    <form>
+        <div class="container">
+            <h1>Register</h1>
+            <p>Please fill in this form to create an account.</p>
+
+            <div id="input-container"></div>
+            <div id="ts-container"></div>
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+
+        <div class="container signin">
+            <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div>
+    </form>
+
 </div>
 
 </body>

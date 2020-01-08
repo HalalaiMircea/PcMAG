@@ -1,6 +1,6 @@
 
 .main-body {
-    margin: 10vh 25vw;
+    margin: 10vh 30vw;
     border: 3px solid #f1f1f1;
     border-radius: 15px;
     background-color: white;
@@ -19,6 +19,15 @@
 .logo-container {
     text-align: center;
     margin: 24px 0 12px 0;
+}
+
+input[type=text], input[type=password] {
+
+}
+
+.input-field {
+    margin: 15px;
+    width: 50%;
 }
 
 .container {
