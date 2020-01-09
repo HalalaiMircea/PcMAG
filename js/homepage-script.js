@@ -1,6 +1,6 @@
 const root = 'https://jsonplaceholder.typicode.com/photos/';
-let id = 1;
 const f_items_div = document.getElementsByClassName('featured-items-div').item(0);
+let id = 1;
 let products_json;
 let item_array;
 

@@ -1,25 +1,24 @@
-const root = 'https://jsonplaceholder.typicode.com/photos/';
-let products_json;
-let item_array;
+const head_tag = document.getElementsByTagName('head').item(0);
 let cart_content_div;
+let css_link;
+let item_array;
 
 // This function displays the cart HTML page depending on what content there is in localStorage
 function displayContent() {
-    let head_tag = document.getElementsByTagName('head').item(0);
-    let css_style = document.createElement('link');
-    css_style.rel = 'stylesheet';
-    css_style.type = 'text/css';
-    item_array = JSON.parse(localStorage.getItem('item_array'));
     cart_content_div = document.getElementById('cart-content-div');
+    css_link = document.createElement('link');
+    css_link.rel = 'stylesheet';
+    css_link.type = 'text/css';
+    item_array = JSON.parse(localStorage.getItem('item_array'));
 
     if (item_array.length === 0) {
-        css_style.href = 'css/empty-cart-style.css';
-        head_tag.appendChild(css_style);
+        css_link.href = 'css/empty-cart-style.css';
+        head_tag.appendChild(css_link);
         setTimeout(displayEmptyCart, 100);
     } else {
         console.log('Cart is not empty');
-        css_style.href = 'css/cart-style.css';
-        head_tag.appendChild(css_style);
+        css_link.href = 'css/cart-style.css';
+        head_tag.appendChild(css_link);
         setTimeout(displayFullCart, 100);
     }
 }
@@ -57,4 +56,11 @@ function removeYourSelf(object, html_element) {
     localStorage.setItem('item_array', JSON.stringify(item_array));
     // And remove the Node from the HTML doc
     cart_content_div.removeChild(html_element);
+    // If the array is empty, restore the empty cart styling and html
+    if (item_array.length === 0) {
+        while (cart_content_div.firstChild)
+            cart_content_div.removeChild(cart_content_div.firstChild);
+        css_link.href = 'css/empty-cart-style.css';
+        setTimeout(displayEmptyCart, 100);
+    }
 }
