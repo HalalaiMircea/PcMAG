@@ -43,16 +43,16 @@ function displayFullCart() {
         a_elem.href = '#';
         a_elem.innerHTML = '<img class="item-img" src="' + item_array[i].url + '" alt="">';
         a_elem.onclick = function () {
-            removeYourSelf(i, a_elem);
+            removeYourSelf(item_array[i], a_elem);
         };
-        // a_elem.addEventListener('click', removeYourSelf(i, a_elem));
         cart_content_div.appendChild(a_elem);
     }
 }
 
-function removeYourSelf(array_index, html_element) {
+function removeYourSelf(object, html_element) {
     // Remove the item from the array at that index
-    item_array.splice(array_index, 1);
+    item_array.splice(item_array.indexOf(object), 1);
+    console.log(item_array);
     // Update the localstorage
     localStorage.setItem('item_array', JSON.stringify(item_array));
     // And remove the Node from the HTML doc
