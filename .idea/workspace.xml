@@ -27,6 +27,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jsx.switch.disabled" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -67,7 +68,7 @@
       <workItem from="1574468588022" duration="1252000" />
       <workItem from="1574706121066" duration="20000" />
       <workItem from="1578494286668" duration="27452000" />
-      <workItem from="1578571802443" duration="6477000" />
+      <workItem from="1578571802443" duration="17039000" />
     </task>
     <servers />
   </component>

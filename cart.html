@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PcMAG-Shopping Cart</title>
-
+    <script src="js/cart-script.js"></script>
     <link rel="stylesheet" type="text/css" href="css/general-style.css">
-    <link rel="stylesheet" type="text/css" href="css/cart-style.css">
 
     <link rel="shortcut icon" href="img/favicon.ico">
 </head>
-<body>
+<body onload="displayContent()">
 <!--//NAVIGATION BAR-->
 
 <header>
@@ -44,12 +43,8 @@
 </header>
 
 <!--NAVIGATION BAR//-->
-<div id="empty-cart">
-    <h1>Your cart is empty 😢</h1>
-    <h4>Please return to the store to add products</h4>
-    <a href="index.html">
-        <div id="return-bttn-cont">Return to Store</div>
-    </a>
+<div id="empty-cart-div">
+
 
 </div>
 

@@ -30,7 +30,24 @@ div.featured-items-div {
 
 /*Body*/
 .main-body {
-    margin: 100px 200px;
+    margin: 100px 200px 50px 200px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+#load-btn {
+    background-color: #e87b18;
+    color: white;
+    margin: 5vh 20vw;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 1449px) {
